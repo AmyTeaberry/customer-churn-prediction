@@ -51,8 +51,6 @@ customer-churn-prediction/
 
 ## Results
 
-## Results
-
 ### Model Performance
 
 | Metric | Logistic Regression | Random Forest |
