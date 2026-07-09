@@ -51,7 +51,29 @@ customer-churn-prediction/
 
 ## Results
 
-*(To be updated after modeling is complete)*
+## Results
+
+### Model Performance
+
+| Metric | Logistic Regression | Random Forest |
+|--------|---------------------|----------------|
+| Accuracy | 0.7913 | 0.7906 |
+| Precision | 0.6274 | 0.6386 |
+| Recall | 0.5267 | 0.4866 |
+| F1 Score | 0.5727 | 0.5524 |
+| ROC-AUC | 0.8394 | 0.8357 |
+
+### Key Findings
+
+1. **Model selection**: Logistic Regression outperformed Random Forest on Recall and ROC-AUC, the two metrics most relevant to churn prediction. Simpler models can outperform more complex ones depending on the business objective.
+2. **Class imbalance matters**: With only 26.5% churn rate, Accuracy alone is misleading. Recall and ROC-AUC were prioritized to ensure the model actually identifies at-risk customers.
+3. **Top churn drivers**: Tenure, TotalCharges, and MonthlyCharges are the strongest predictors, followed by Fiber optic internet service and contract length.
+
+### Visualizations
+
+![Confusion Matrices](confusion_matrices.png)
+![ROC Curve](roc_curve.png)
+![Feature Importance](feature_importance.png)
 
 ## Background & Motivation
 
